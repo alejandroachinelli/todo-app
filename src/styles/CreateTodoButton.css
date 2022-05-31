@@ -1,0 +1,145 @@
+.Title{
+    background-color: #2F497C;
+    margin-top: 0;
+    border-radius: 24px 24px 50% 50%;
+    height: 120px;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 24px;
+    margin-bottom: 48px;
+    color: #FFFFFF;
+}
+
+.AddTaskContainer {
+    display: grid;
+    place-content: center;
+}
+
+.AddTaskInput {
+    border: none;
+    border-bottom: 1px solid #2F497C;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    height: 28px;
+    width: 480px;
+    padding-left: 12px;
+    -webkit-transition: border 5s;
+    transition: border 5s;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.AddTaskInput::placeholder{
+    color: #202329;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.AddTaskInput:hover {
+    border-radius: 8px;
+}
+
+.AddTaskInput:focus {
+    outline: none;
+    outline-color: #2F497C;
+}
+
+.ButtonCreateTask {
+    background-color: #2F497C;
+    height: 48px;
+    width: 120px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #2F497C;
+    transition: width 0.5s;
+}
+
+.ButtonCreateTask:hover {
+    background-color: #2F497C;
+    height: 48px;
+    width: 180px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #2F497C;
+}
+
+.ButtonCreateTask:active {
+    background-color: #4065b1;
+    height: 48px;
+    width: 180px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #4065b1;
+}
+
+.MessageError-run {
+    background-color: #f45151;
+    color: #202329;
+    width: 468px;
+    height: 24px;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    animation: fade-in-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in-left {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.MessageError-end {
+    background-color: #f45151;
+    color: #202329;
+    width: 468px;
+    height: 24px;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    animation: fade-out-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes fade-out-right {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .Title{
+        display: none;
+    }
+
+    .AddTaskContainer {
+        display: none;
+    }
+
+    .MessageError-end {
+        display: none;
+    }
+}

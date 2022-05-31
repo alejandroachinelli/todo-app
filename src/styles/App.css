@@ -1,0 +1,82 @@
+.CreateTaskButton{
+    float: left;
+    margin-top: 50px;
+    margin-left: 180px;
+    display: grid;
+    width: 680px;
+    height: 840px;
+    align-content: baseline;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 53px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 53px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 53px -4px rgba(0,0,0,0.75);
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 24px;
+}
+
+.ContainerTask{
+    float: right;
+    margin-top: 50px;
+    margin-right: 180px;
+    width: 680px;
+    height: 840px;
+}
+
+.CreateTodoButtonMedia {
+    display: none;
+}
+
+.Message {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    width: max-content;
+}
+
+@media (max-width: 768px) {
+    .CreateTaskButton{
+        display: none;
+    }
+
+    .ContainerTask{
+        margin: 18px 18px 0 18px;
+        height: auto;
+        width: 514px;
+        flex: auto;
+    }
+
+    .CreateTodoButtonMedia {
+        background-color: #2F497C;
+        box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 50px;
+        position: sticky;
+        bottom: 24px;
+        right: 24px;
+        font-weight: bold;
+        color: #FAFAFA;
+        display: flex;
+        align-items: center;
+        height: 64px;
+        width: 64px;
+        z-index: 100;
+        margin: 0.1em;
+        float: right;
+        padding: 18px;
+        position: fixed;
+
+        transform: rotate(0);
+        transition: .3s ease;
+    }
+
+    .CreateTodoButtonMedia:hover{
+        transform: rotate(224deg);
+    }
+}

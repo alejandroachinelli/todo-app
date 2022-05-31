@@ -1,0 +1,31 @@
+.TodoCounter {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    background-color: #2F497C;
+    border-radius: 16px;
+    padding: 24px;
+    color: #FFFFFF;
+    transition: transform 0.5s;
+}
+
+.TodoCounter:hover {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    background-color: #2F497C;
+    border-radius: 16px;
+    padding: 24px;
+    color: #FFFFFF;
+
+    transform: scale(1.05);
+}
+
+hr {
+    color: #2F497C;
+    border: none;
+    border-radius: 8px;
+    height: 2px;
+    background-color: #2F497C;
+    margin-bottom: 16px;
+}
