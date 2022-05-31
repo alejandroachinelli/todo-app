@@ -39,10 +39,6 @@
     left: 12px;
 }
 
-.Icon-check:hover {
-    color: #4CAF50;
-}
-
 .Icon-check--active {
     color: #4CAF50;
 }
