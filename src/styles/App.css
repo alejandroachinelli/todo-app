@@ -45,8 +45,7 @@ p {
 
     .ContainerTask{
         margin: 18px 18px 0 18px;
-        height: auto;
-        width: 514px;
+        width: 60%;
         flex: auto;
     }
 
