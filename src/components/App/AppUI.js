@@ -13,17 +13,43 @@ import '../../styles/App.css';
 
 function AppUI() {
 
-    const { error, loading, searchedTodos, completeTodos, deleteTodo, openModal, setOpenModal } = useContext(TodoContext);
+    const {
+        error,
+        loading,
+        searchedTodos,
+        completeTodos,
+        deleteTodo,
+        openModal,
+        setOpenModal,
+        addTodo,
+        completedTodos,
+        totalTodos,
+        searchValue,
+        setSearchValue
+    } = useContext(TodoContext);
 
     return (
         <>
             <div className='CreateTaskButton'>
-                <CreateTodoButton/>
+
+                <CreateTodoButton
+                    addTodo={addTodo}
+                />
+
             </div>
 
             <div className='ContainerTask'>
-                <TodoCounter />
-                <TodoSearch />
+
+                <TodoCounter
+                    completedTodos={completeTodos}
+                    totalTodos={totalTodos}
+                />
+
+                <TodoSearch
+                    searchValue={searchValue}
+                    setSearchValue={setSearchValue}
+                />
+
                 {
                     (error) ?
                         <TodoError error={error} /> :

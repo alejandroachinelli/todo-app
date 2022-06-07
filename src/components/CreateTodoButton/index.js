@@ -1,12 +1,10 @@
-import React, { useState, useContext } from 'react'
-import { TodoContext } from '../../contexts/TodoContext';
-import '../../styles/CreateTodoButton.css'
+import React, { useState } from 'react';
+import '../../styles/CreateTodoButton.css';
 
-function CreateTodoButton() {
+function CreateTodoButton({addTodo}) {
 
     const [newTodoValue, setNewTodoValue] = useState('');
     const [errorMessage, setErrorMessage] = useState(false);
-    const { addTodo } = useContext(TodoContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
