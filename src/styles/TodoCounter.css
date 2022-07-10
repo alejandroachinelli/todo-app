@@ -29,3 +29,7 @@ hr {
     background-color: #2F497C;
     margin-bottom: 16px;
 }
+
+.TodoCounter--loading{
+    opacity: 25%;
+}

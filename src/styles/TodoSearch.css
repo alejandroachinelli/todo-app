@@ -25,6 +25,10 @@
     outline-color: #4065b1;
 }
 
+.TodoSearch:disabled {
+    opacity: 25%;
+}
+
 .Logo {
     width: 36px;
     height: 36px;

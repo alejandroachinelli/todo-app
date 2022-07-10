@@ -1,12 +1,10 @@
-import React, { useContext, useState } from 'react';
-import { TodoContext } from '../../contexts/TodoContext';
+import React, { useState } from 'react';
 import '../../styles/Modal.css'
 
-function TodoForm(){
+function TodoForm({setOpenModal, addTodo}){
 
     const [newTodoValue, setNewTodoValue] = useState('');
     const [errorMessage, setErrorMessage] = useState(false);
-    const { setOpenModal, addTodo } = useContext(TodoContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();

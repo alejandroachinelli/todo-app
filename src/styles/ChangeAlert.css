@@ -1,0 +1,82 @@
+.ChangeAlert-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1e1e1f50;
+    z-index: 2;
+}
+
+.ChangeAlert-container{
+    padding: 34px;
+    display: grid;
+    justify-items: center;
+    background-color: #2F497C;
+    max-width: auto;
+    color: #FFFFFF;
+}
+
+.TodoForm-button {
+    background-color: #1e1e1f50;
+    height: 48px;
+    width: 120px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #1e1e1f50;
+    transition: width 0.5s;
+}
+
+.TodoForm-button:hover {
+    background-color: #1e1e1f50;
+    height: 48px;
+    width: 180px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #1e1e1f50;
+}
+
+.TodoForm-button:active {
+    background-color: #1e1e1f50;
+    height: 48px;
+    width: 180px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #1e1e1f50;
+}
+
+@media (max-width: 768px) {
+    .ChangeAlert-bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #1e1e1f50;
+        z-index: 200;
+    }
+
+    .ChangeAlert-container{
+        display: flex;
+        background-color: #2F497C;
+        color: #FFFFFF;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .ChangeAlert-container p{
+        max-width: fit-content;
+        text-align: center;
+    }
+}
